@@ -1,0 +1,25 @@
+html {
+    color: red;
+}
+
+.paragraph {
+    color: inherit;  /* inherit deixa claro que .paragraph está herdando a cor red do seu pai que é html */
+    width: 200px;
+    /* propriedades de box-model (ex: tamanho) não são passadas por default como herança */
+}
+
+.bold {
+    color: initial;
+    /* initial é usada para resetar o valor para o valor default
+     * a cor de da class bold volta ao seu padrão inicial que é preto */
+
+    width: inherit;
+    /* podemos forçar a herança com a propriedade inherit
+     *vai herdar de forma explícita o valor de largura do seu pai */
+
+}
+
+/*
+- inherit deixa a herança explícita
+- initial reseta o valor da propriedade
+*/
